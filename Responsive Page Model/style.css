@@ -60,7 +60,7 @@ button{
 }
 
 #check{
-    /* display: none; */
+    display: none;
     float: right;
 }
 
