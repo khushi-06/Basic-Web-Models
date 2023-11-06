@@ -121,14 +121,10 @@ button{
         transition: all .5s;
     }
 
-    nav ul {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
+    
 
     #check:checked ~ul{
-        left: 0;
+        display: none;
     }
 
 
