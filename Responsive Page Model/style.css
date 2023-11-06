@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    background-color: #A8DF8E;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    width: 140px;
+    height: 60px;
+    background-color: #F3FDE8;
+    padding-left: 40px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+
+nav a{
+    color:black;
+    font-size: 2.5vh; 
+}
+
+
+button{
+    color:black;
+    background-color: #F3FDE8;
+    font-size: 2.5vh; 
+    border: transparent;
+    width: 100px;
+    height: 30px;
+}
+
+
+.checkbtn{
+    font-size: 3vh;
+    line-height: 90px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    /* display: none; */
+    float: right;
+}
+
+
+/* --------------------------RESPONSIVE CODE FOR THE DESIGN------------------------ */
+
+
+
+/* Making the design Responsive for the Tablets */
+@media (max-width: 952px ) {
+ 
+    
+    .logo{
+        width: 150px;
+        height: 60px;
+        background-color: #F3FDE8;
+    }
+    
+    nav ul{
+        display: flex;
+        gap: 20px;
+    
+    }
+    
+}
+
+
+/* Making Design Responsive For Mobile Phone */
+
+
+@media (max-width: 700px ) {
+
+    
+    
+    .checkbtn{
+        display: block;
+        float: right;
+        padding-right: 40px;
+    }
+
+
+    nav{
+        padding: 0;
+    }
+    
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background-color:#F3FDE8;
+        top:80px;
+        left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column ;
+        padding-top: 80px;
+
+        transition: all .5s;
+    }
+
+    nav ul {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #check:checked ~ul{
+        left: 0;
+    }
+
+
+    
+
+    
+    
+}
